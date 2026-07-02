@@ -1,0 +1,11 @@
+- name: varibales placed in this
+  hosts: local
+  connection: local
+  vars_files:
+  - cource.yaml
+  tasks:
+  - name: print the variables
+    vars:
+      course: "ansible"
+    ansible.builtin.debug:
+      msg: "hi are u learning {{ course }} tuter name {{ name }}"
