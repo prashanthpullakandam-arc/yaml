@@ -5,7 +5,7 @@
      COURSE: "Dev ops with AWS"
      Duration: "140hrs"
      Trainser: "prashanth"
-    tasks:
-    - name: print the data
-       ansible.builtin.debug:
+   tasks:
+   - name: print the data
+     ansible.builtin.debug:
        msg: "Course is {{ COURSE }}, traiser is {{ Trainser }}"
