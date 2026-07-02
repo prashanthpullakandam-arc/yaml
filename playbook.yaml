@@ -1,5 +1,5 @@
-- name: ping the server
-  hosts: Web
-  tasks:
-  - name: ping the server
-    ansibel.builtin.ping:
+-  name: ping the server
+   hosts: Web
+   tasks:
+   -  name: ping the server
+      ansibel.builtin.ping:
