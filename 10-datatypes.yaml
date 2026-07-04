@@ -1,0 +1,23 @@
+- name: data types
+  hosts: local
+  connections:  local
+  vars:
+    PROGRAM: "dev ops with aws"
+    Duration: 140
+    IS_LIVE:  TRUE
+    Details:
+      MONTHS: 4
+      TRAINER: "Prashanth"
+    TOPICS:
+    - LINUX
+    - shell
+    - ANSIBLE
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg:  |
+        Program:  {{ PROGRAM }}
+        Duration: {{ Duration }}
+        IS_LIVE:  {{ IS_LIVE }}
+        Details:  {{ Details }}
+        TOPICS: {{ TOPICS }}
