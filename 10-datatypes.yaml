@@ -1,6 +1,6 @@
 - name: data types
   hosts: local
-  connections:  local
+  connection:  local
   vars:
     PROGRAM: "dev ops with aws"
     Duration: 140
