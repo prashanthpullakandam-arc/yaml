@@ -1,6 +1,6 @@
 - name: installing pakages
-  hosts:  local
-  connections:  local
+  hosts: local
+  connection: local
   become: yes
   tasks:
   - name: install package
