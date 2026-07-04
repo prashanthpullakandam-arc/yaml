@@ -9,3 +9,6 @@
   - name: check the data
     ansible.builtin.debug:
       msg: "{{ user_output }}"
+  - name: create user
+    ansible.builtin.command: add roboshop
+    when: user_output.rc != 0
