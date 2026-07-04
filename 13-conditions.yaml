@@ -1,0 +1,7 @@
+- name: Conditions check ansible vs shell module
+  hosts: local
+  connection: local
+  tasks:
+  - name: ansible module
+    ansible.builtin.command: cat /etc/passwd | grep root
+    reginster: user_output
