@@ -4,4 +4,4 @@
   tasks:
   - name: ansible module
     ansible.builtin.command: cat /etc/passwd | grep root
-    reginster: user_output
+    register: user_output
